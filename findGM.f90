@@ -13,10 +13,14 @@ subroutine findGM(k,mI,o,nkm)
       s=1
       t=2.5
       jstar=6
-   else
+   else if (p_GM==76) then
       s=2
       t=2
       jstar=4 ! changed from 3 to 4
+   else if (p_GM==762) then
+       s=2
+       t=1.8
+       jstar=4 ! changed from 3 to 4	   
    end if 
 
    m=abs(mI)*p_factor

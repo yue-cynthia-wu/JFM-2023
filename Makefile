@@ -5,7 +5,7 @@ FC = gfortran
 CFLAGS = -g -fcheck=all -fbacktrace -Waliasing -Wampersand -Wconversion -Wsurprising -Wc-binding-type -Wintrinsics-std -Wintrinsic-shadow -Wline-truncation -Wtarget-lifetime -Winteger-division -Wreal-q-constant -Wunused -Wundefined-do-loop
 
 # lib flags
-LFLAGS = -Wl,-flat_namespace -Wl,-commons,use_dylibs -I/usr/local/Cellar/open-mpi/4.1.4_2/lib -L/usr/local/Cellar/open-mpi/4.1.4_2/lib -I/usr/local/Cellar/open-mpi/4.1.4_2/include -L/usr/local/Cellar/open-mpi/4.1.4_2/include -L/usr/local/opt/libevent/lib -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi
+LFLAGS = -Wl,-flat_namespace -Wl,-commons,use_dylibs  -I/opt/homebrew/Cellar/open-mpi/4.1.5/lib  -L/opt/homebrew/Cellar/open-mpi/4.1.5/lib  -I/opt/homebrew/Cellar/open-mpi/4.1.5/include  -L/opt/homebrew/Cellar/open-mpi/4.1.5/include  -L/opt/homebrew/Cellar/libevent/2.1.12/lib  -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi
 
 # source files
 SRCS= header utils fzero findGM findV findIntSum findIntRed
