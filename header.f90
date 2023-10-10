@@ -2,8 +2,8 @@ MODULE header
 use, intrinsic :: iso_fortran_env, d=>real64
 implicit none
 
-integer, parameter :: p_GM=76, p_hydro=0, iRollK=0, iRollM=0
-real(d), parameter :: MaxK=0.016, MaxM_v=0.32, p_kc=0.03, p_mc=0.6
+integer, parameter :: p_GM=762, p_hydro=0, iRollK=0, iRollM=0
+real(d), parameter :: MaxK=0.16, MaxM_v=3.2, p_kc=0.032, p_mc=0.64
 ! ! -----------------------------------------------------------------------------
 ! ! real(d), parameter :: pi=4.D0*DATAN(1.D0), p_error=1e-7
 real(d), parameter :: pi=3.1415926535898, p_error=1e-7
